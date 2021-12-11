@@ -276,10 +276,13 @@ section {
   border-radius: 50%;
   background-color: #ffffff;
 }
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--primary-bg-color);
+}
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  fill: #ffffff;
 }
 
 .social-icon {
@@ -291,30 +294,33 @@ section {
   display: flex;
 }
 .allclient {
-  padding-top: 73px;
-  padding-bottom: 115px;
 }
-
-.clients .link {
-  display: flex;
-  box-sizing: border-box;
-
-  border: 1px solid #afb1b8;
-  content: '';
+.clients-item {
   height: 92px;
   width: 170px;
-
+}
+.clients-link {
+  display: flex;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #afb1b8;
+  content: '';
   border-radius: 4px;
   align-items: center;
   justify-content: center;
 }
-.clients .link:hover,
-.clients .link:focus {
+.clients-logo {
+  fill: #afb1b8;
+}
+.clients-link:hover {
+  border-color: var(--accent-color);
+}
+.clients-link:hover .clients-logo {
   fill: var(--accent-color);
-  color: var(--accent-color);
 }
 
-.clients .item:not(:last-child) {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -377,6 +383,7 @@ section {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
 }
 address {
   margin-top: 20px;
@@ -412,6 +419,52 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social {
+  display: inline-block;
+  margin-left: 70px;
+}
+.title-footer-social {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  fill: var(--primary-bg-color);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  fill: var(--primary-bg-color);
+}
 
 /* Portfolio */
 /* Our projects */
@@ -435,11 +488,16 @@ address {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.project-list .link {
+.project-list .project-link {
   text-decoration: none;
 }
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
-.project-list .item {
+.project-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
