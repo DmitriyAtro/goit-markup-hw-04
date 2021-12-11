@@ -129,8 +129,6 @@ section {
   color: var(--accent-color);
 }
 .auth-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -199,8 +197,6 @@ section {
   align-items: center;
 }
 .feature-icon {
-  width: 70px;
-  height: 70px;
 }
 
 .feature-list .item:not(:first-child) {
@@ -287,8 +283,6 @@ section {
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
 }
 
