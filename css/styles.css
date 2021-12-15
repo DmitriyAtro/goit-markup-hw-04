@@ -116,7 +116,7 @@ section {
 }
 .auth-nav .link {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -141,7 +141,6 @@ section {
   padding-bottom: 200px;
 }
 .hero.overlay {
-  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -185,12 +184,10 @@ section {
 }
 .icon-box {
   display: flex;
-  content: '';
+
   height: 120px;
   background-color: var(--additional-bg-color);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+
   margin-bottom: 30px;
   border-radius: 4px;
   justify-content: center;
@@ -491,8 +488,12 @@ address {
 .project-list .project-link {
   text-decoration: none;
 }
-.project-item:hover,
-.project-item:focus {
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
